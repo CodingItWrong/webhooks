@@ -42,7 +42,6 @@ RSpec.describe "riverbed links", type: :request do
 
   it "returns a record with the retrieved title" do
     send!
-    expect(true).to be_falsey
 
     expect(response.status).to eq(200)
     expect(response_body).to eq({
