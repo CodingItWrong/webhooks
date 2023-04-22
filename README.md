@@ -1,24 +1,31 @@
-# README
+# webhooks
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A catch-all Rails app for a variety of webhooks.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+### Requirements
 
-* System dependencies
+1. Ruby
 
-* Configuration
+### Setup
 
-* Database creation
+```sh
+$ bundle install
+```
 
-* Database initialization
+### Testing
 
-* How to run the test suite
+```sh
+$ bin/rspec
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Running
 
-* Deployment instructions
+```sh
+$ rails server
+```
 
-* ...
+## License
+
+MIT
