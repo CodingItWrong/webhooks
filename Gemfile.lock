@@ -97,6 +97,7 @@ GEM
       reline (>= 0.3.0)
     json (2.6.3)
     language_server-protocol (3.17.0.3)
+    lint_roller (1.0.0)
     loofah (2.20.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -128,7 +129,7 @@ GEM
     parser (3.2.2.0)
       ast (~> 2.4.1)
     public_suffix (5.0.1)
-    puma (5.6.5)
+    puma (6.2.2)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.6.4)
@@ -203,9 +204,16 @@ GEM
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.13.0)
-    standard (1.27.0)
+    standard (1.28.0)
       language_server-protocol (~> 3.17.0.2)
+      lint_roller (~> 1.0)
       rubocop (~> 1.50.2)
+      standard-custom (~> 1.0.0)
+      standard-performance (~> 1.0.1)
+    standard-custom (1.0.0)
+      lint_roller (~> 1.0)
+    standard-performance (1.0.1)
+      lint_roller (~> 1.0)
       rubocop-performance (~> 1.16.0)
     thor (1.2.1)
     timeout (0.3.2)
@@ -230,7 +238,7 @@ DEPENDENCIES
   debug
   dotenv-rails
   httparty
-  puma (~> 5.0)
+  puma (~> 6.2)
   rack-attack
   rails (~> 7.0.4, >= 7.0.4.3)
   rspec-rails
