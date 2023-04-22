@@ -11,10 +11,11 @@ module Riverbed
       # TODO: receive and use field metadata to look up field IDs
       attributes = {
         url_field_id => parsed_link.canonical,
-        field_id("Title") => parsed_link.title,
+        title_field_id => link_params["field-values"][title_field_id],
         field_id("Saved At") => now,
         field_id("Read Status Changed At") => now
       }
+      attributes[title_field_id] = parsed_link.title if default_title?(link_params)
 
       render json: attributes
     end
@@ -36,8 +37,14 @@ module Riverbed
 
     def url_field_id = field_id("URL")
 
+    def title_field_id = field_id("Title")
+
     def link_parser = LinkParser
 
     def now = Time.zone.now.iso8601
+
+    def default_title?(link_params)
+      link_params["field-values"][title_field_id].blank? || link_params["field-values"][title_field_id] == link_params["field-values"][url_field_id]
+    end
   end
 end

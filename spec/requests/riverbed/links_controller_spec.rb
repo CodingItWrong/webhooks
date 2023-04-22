@@ -12,9 +12,7 @@ RSpec.describe "riverbed links", type: :request do
   let(:headers) { {"Content-Type" => "application/json"} }
   let(:body) {
     {
-      "field-values" => {
-        url_field["id"] => url
-      },
+      "field-values" => field_values,
       "elements" => [
         url_field,
         title_field,
@@ -40,15 +38,45 @@ RSpec.describe "riverbed links", type: :request do
     patch riverbed_link_path(27), params: body.to_json, headers: headers
   end
 
-  it "returns a record with the retrieved title" do
-    send!
+  context "without a pre-set title" do
+    let(:field_values) {
+      {
+        url_field["id"] => url
+      }
+    }
 
-    expect(response.status).to eq(200)
-    expect(response_body).to eq({
-      url_field["id"] => url,
-      title_field["id"] => "Sample Post Title",
-      saved_at_field["id"] => now,
-      read_status_changed_at_field["id"] => now
-    })
+    it "returns a record with the retrieved title" do
+      send!
+
+      expect(response.status).to eq(200)
+      expect(response_body).to eq({
+        url_field["id"] => url,
+        title_field["id"] => "Sample Post Title",
+        saved_at_field["id"] => now,
+        read_status_changed_at_field["id"] => now
+      })
+    end
+  end
+
+  context "with a pre-set title" do
+    let(:title) { "Pre-Set Title" }
+    let(:field_values) {
+      {
+        url_field["id"] => url,
+        title_field["id"] => title
+      }
+    }
+
+    it "returns a record with the pre-set title" do
+      send!
+
+      expect(response.status).to eq(200)
+      expect(response_body).to eq({
+        url_field["id"] => url,
+        title_field["id"] => title,
+        saved_at_field["id"] => now,
+        read_status_changed_at_field["id"] => now
+      })
+    end
   end
 end
