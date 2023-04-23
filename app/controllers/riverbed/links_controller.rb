@@ -8,7 +8,6 @@ module Riverbed
         timeout_seconds: 30
       )
 
-      # TODO: receive and use field metadata to look up field IDs
       attributes = {
         url_field_id => parsed_link.canonical,
         title_field_id => link_params["field-values"][title_field_id],
@@ -32,7 +31,9 @@ module Riverbed
     end
 
     def field_id(name)
-      link_params[:elements].find { |e| e[:attributes][:name] == name }[:id]
+      link_params[:elements].find { |e|
+        e[:attributes][:name] == name
+      }[:id]
     end
 
     def url_field_id = field_id("URL")
@@ -44,7 +45,10 @@ module Riverbed
     def now = Time.zone.now.iso8601
 
     def default_title?(link_params)
-      link_params["field-values"][title_field_id].blank? || link_params["field-values"][title_field_id] == link_params["field-values"][url_field_id]
+      title_field = link_params["field-values"][title_field_id]
+      url_field = link_params["field-values"][url_field_id]
+
+      title_field.blank? || title_field == url_field
     end
   end
 end
