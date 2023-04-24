@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sat, 22 Apr 2023 14:05:12 GMT
+      - Mon, 24 Apr 2023 11:17:21 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -41,16 +41,16 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"544cd64619844c3fe643759f15c82c7e"
+      - W/"dfdbf942032ca75e03db549bcb5b0f2a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - _destroyallsoftware_session=RU5oYzNEYVNQOUt2b1o2MXhFVVVXRXM2akJxNENyczFFYkJiRm8vOEJCM0dLcG9yY08zYW9Jb0ROZyt6S2NUeDdkVlhpYUEzaEFXeUFDcGpHeHAvK1dMQWIwazJDWUlKcnRTOHZtMDVRY0JzcjVHN1Q0QVhEck4rekxCNlhrQTg5bzRNQVdWZE1yQmQ1bHZYTDFaVWVyTHNlQU5HVmV2UEJSVTBGbVY0U2JxbUFZZkE3K1lwSWgwREJqSjc5Y3MxLS1HWVA2MXp6OFg2Rzh5QnJWMHBodnZBPT0%3D--8c4cdfeb8e283fe3b28e89ccc424966982f464a0;
+      - _destroyallsoftware_session=OFQyZFBGZGN2SFJYVHh2a2p6V3A2ejF4ekcwSnQydjRlVFNTUDd1dDZDTC9SaGJzSHA1KzVVY2taOXp1N1NFV2FXOWZTTjhpR0VoVUhyaVNrM3dGQmxHVk9ibCswNlJOOSt1T0tuV1gySVV1b3FNWW5iQ2VGK1QxT1RPcWtWY0NxQUpiRm1XNjZpUGI2SVhablJ5dkNhK05PMnJWTnU2eDhGV0FTY1NHaE1PZ1RodkU5SWdLdmdiUHZOdW43SkhpLS1waXV3VTVudy9UT0dGNXNvaTM5U3ZBPT0%3D--271fec1d0ea6839b8d706f677d3fba24829a74d8;
         path=/; secure; HttpOnly
       X-Request-Id:
-      - 9fbad6e0-2623-41ce-b377-749572f00e2e
+      - c4f45d6e-0911-4435-9d68-2f37245d6058
       X-Runtime:
-      - '0.007517'
+      - '0.009012'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
       Content-Length:
@@ -66,7 +66,7 @@ http_interactions:
         />\n  <link rel=\"stylesheet\" href=\"/assets/application-11634a9cacde5175b67a0615d3ca156fd703bc70b7596455ee7ad25822d77fab.css\"
         media=\"all\" />\n  <script src=\"/assets/application-2ec153dafeb60059eaa776a607f3000ae2b99d68f4dc78b3e1e354755a4a8652.js\"></script>\n
         \ \n  <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\"
-        content=\"MG1Hng8pkHmsPJT_cSXuZL1iHzmqMjYuAAFqmvw28-Tg2jp6xfzbhM03Hfw80YFwKQfkILUc3NIph6H1Z73fgg\"
+        content=\"aX1O0As-6-_YNQH3WVgzEtfOFmp-EScBOt75C3w1ihJoYkDBwP_X2xFLZV7BbB1Kf6jyNBkCmrLiMyVTNJVg8g\"
         />\n</head>\n<body>\n  \n\n  <div class=\"top_navigation\">\n    <div class=\"primary_navigation\">\n
         \     <div class=\"container\">\n        <div class=\"hamburger_button\"><img
         src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAoCAYAAAB0HkOaAAABG2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8%2BCiA8L3JkZjpSREY%2BCjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8%2BGkqr6gAAAYJpQ0NQc1JHQiBJRUM2MTk2Ni0yLjEAACiRdZHPK0RRFMc%2FM0PECKEsLCYNKyNGTWyUkVCTpjHKYDPz5peaH6%2F3ZpJsle0UJTZ%2BLfgL2CprpYiULKysiQ3Tc96Mmknm3M49n%2Fu995zuPReswZSS1uuGIJ3JaYFpr2MxtORoeMFKD114aA8rujrh9%2FuoaZ%2F3WMx46zJr1T73rzVHY7oClkbhcUXVcsIzwr61nGryjnCnkgxHhc%2BEBzS5oPCdqUfK%2FGpyoszfJmvBwCRY24QdiSqOVLGS1NLC8nKc6VRe%2Bb2P%2BRJ7LLMwL7FXvAedANN4cTDLFJPSk2HGZPbgws2grKiRP1TKnyMruYrMKutorJIgSY4BUfNSPSYxLnpMRop1s%2F9%2F%2B6rHR9zl6nYv1D8bxnsfNGxDsWAYX0eGUTwG2xNcZir52UMY%2FRC9UNGcB9C6CedXFS2yCxdb0P2ohrVwSbKJW%2BNxeDuFlhB03EDTcrlnv%2FucPEBwQ77qGvb2oV%2FOt678AHuMZ%2B%2FPgSnPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAkElEQVRYhe3XsQ3CMBCF4f%2BiVEjMwggsQ8FOsAwb4GFwhfTSxBIFKaC5U%2FS%2BBe4vbNkHZr8JSUfgDMyJHW%2FgEZKewCkxZGghSdkVw5Qd8KlcTMuOWLVStylxvtnOhKQrcCH%2Fat9D0gs4JIYM3Q%2Fllgno2RGrXukA3xLnm%2B1MqW%2Bnl7gt5d6mMrzEfeElzv6yAMvSPr7b38OWAAAAAElFTkSuQmCC\"
@@ -93,7 +93,7 @@ http_interactions:
         from Strange Loop 2015\n      </p>\n    </div>\n\n    <div class=\"row\">\n
         \     <div class=\"twelve columns\">\n        <video class=\"u-full-width\"
         poster=\"/assets/posters/talks/ideology.poster-06e1dfbabd877d76c7f96b528929a51346f877b62dd0106dfd584440a561829d.png\"
-        preload=\"none\" controls>\n          <source src=\"https://destroyallsoftware-talks.s3.amazonaws.com/ideology.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKRVCECXBC4ZGHIQ%2F20230422%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20230422T140512Z&amp;X-Amz-Expires=14400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=253c94a70ccc33746ab6c1695f608b40ea02537f365456c47d3fa674ce8d125e\"
+        preload=\"none\" controls>\n          <source src=\"https://destroyallsoftware-talks.s3.amazonaws.com/ideology.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIKRVCECXBC4ZGHIQ%2F20230424%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20230424T111721Z&amp;X-Amz-Expires=14400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=05285f206d8fdee3b51a50f0f2e25a6729e961e7ec1aa9964ec819bb3c631427\"
         />\n          <track label=\"English\" kind=\"captions\" srclang=\"en\" src=\"/captions/talks/ideology.vtt\">\n
         \       </video>\n      </div>\n    </div>\n\n    <div class=\"row\">\n      <div
         class=\"twelve columns\">\n        <p class=\"description\">\n          Some
@@ -124,5 +124,5 @@ http_interactions:
         \     EULA\n</a>  </div>\n\n  <div class=\"stretch\"></div></div>\n\n        </div>\n
         \     </div>\n    </div>\n  </div>\n\n\n    <script defer data-domain=\"destroyallsoftware.com\"
         src=\"https://plausible.io/js/plausible.js\"></script>\n\n\n  \n</body>\n</html>\n\n\n\n"
-  recorded_at: Sat, 22 Apr 2023 14:05:12 GMT
+  recorded_at: Mon, 24 Apr 2023 11:17:21 GMT
 recorded_with: VCR 6.1.0

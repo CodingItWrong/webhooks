@@ -33,33 +33,33 @@ http_interactions:
       Etag:
       - W/"55148b67-13d"
       Expires:
-      - Sat, 22 Apr 2023 14:13:36 GMT
+      - Mon, 24 Apr 2023 11:27:22 GMT
       Cache-Control:
       - max-age=600
       X-Proxy-Cache:
       - MISS
       X-Github-Request-Id:
-      - 7C4A:3462:258A274:333CD5F:6443E938
+      - 2D56:2281:9C8A2F:E15C5A:64466542
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 22 Apr 2023 14:05:13 GMT
+      - Mon, 24 Apr 2023 11:17:22 GMT
       Via:
       - 1.1 varnish
       Age:
       - '0'
       X-Served-By:
-      - cache-pdk17847-PDK
+      - cache-pdk17830-PDK
       X-Cache:
-      - HIT
+      - MISS
       X-Cache-Hits:
-      - '1'
+      - '0'
       X-Timer:
-      - S1682172314.610067,VS0,VE19
+      - S1682335043.601844,VS0,VE22
       Vary:
       - Accept-Encoding
       X-Fastly-Request-Id:
-      - ff329a66bfa857301e4a6300a5c4c1b0d8938b3f
+      - 48a1794ecb0c62fba112f291c65fe6890d67053f
     body:
       encoding: ASCII-8BIT
       string: |2
@@ -71,7 +71,7 @@ http_interactions:
               <meta http-equiv="refresh" content="0;url=/JavaScript-Scoping-and-Hoisting.html" />
               </head>
               </html>
-  recorded_at: Sat, 22 Apr 2023 14:05:13 GMT
+  recorded_at: Mon, 24 Apr 2023 11:17:22 GMT
 - request:
     method: get
     uri: http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html
@@ -98,8 +98,6 @@ http_interactions:
       - GitHub.com
       Content-Type:
       - text/html; charset=utf-8
-      X-Origin-Cache:
-      - HIT
       Last-Modified:
       - Thu, 26 Mar 2015 22:42:47 GMT
       Access-Control-Allow-Origin:
@@ -107,33 +105,33 @@ http_interactions:
       Etag:
       - W/"55148b67-50a3"
       Expires:
-      - Sat, 22 Apr 2023 14:13:36 GMT
+      - Mon, 24 Apr 2023 11:27:22 GMT
       Cache-Control:
       - max-age=600
       X-Proxy-Cache:
       - MISS
       X-Github-Request-Id:
-      - 3EE6:0B89:9DAF98:DE39A2:6443E938
+      - 7E2E:4E17:DAB40E:1289DF5:64466542
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 22 Apr 2023 14:05:13 GMT
+      - Mon, 24 Apr 2023 11:17:22 GMT
       Via:
       - 1.1 varnish
       Age:
       - '0'
       X-Served-By:
-      - cache-pdk17827-PDK
+      - cache-pdk17823-PDK
       X-Cache:
-      - HIT
+      - MISS
       X-Cache-Hits:
-      - '1'
+      - '0'
       X-Timer:
-      - S1682172314.694225,VS0,VE24
+      - S1682335043.692072,VS0,VE23
       Vary:
       - Accept-Encoding
       X-Fastly-Request-Id:
-      - b7a8dafbb92a24d7a2c8870aa43afd606b6719db
+      - 05d95f0f702154cf4d49f99477acb3a97404f18c
     body:
       encoding: ASCII-8BIT
       string: "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\"
@@ -394,5 +392,5 @@ http_interactions:
         =_gaq||[]; _gaq.push(['_setAccount','UA-251077-4']);_gaq.push(['_trackPageview']);(function(){var
         ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(ga);})();</script>\n
         \ </body>\n</html>\n"
-  recorded_at: Sat, 22 Apr 2023 14:05:13 GMT
+  recorded_at: Mon, 24 Apr 2023 11:17:22 GMT
 recorded_with: VCR 6.1.0
