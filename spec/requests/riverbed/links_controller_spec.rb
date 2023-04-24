@@ -23,6 +23,7 @@ RSpec.describe "riverbed links", type: :request do
   }
   let(:response_body) { JSON.parse(response.body) }
   let(:now) { Time.zone.now.iso8601 }
+  let(:title) { "Pre-Set Title" }
 
   before(:each) do
     LinkParser.fake!
@@ -45,12 +46,12 @@ RSpec.describe "riverbed links", type: :request do
       }
     }
 
-    it "returns a record with the retrieved title" do
+    it "returns a record with the retrieved title and canonical URL" do
       send!
 
       expect(response.status).to eq(200)
       expect(response_body).to eq({
-        url_field["id"] => url,
+        url_field["id"] => "#{url}/",
         title_field["id"] => "Sample Post Title",
         saved_at_field["id"] => now,
         read_status_changed_at_field["id"] => now
@@ -59,7 +60,6 @@ RSpec.describe "riverbed links", type: :request do
   end
 
   context "with a pre-set title" do
-    let(:title) { "Pre-Set Title" }
     let(:field_values) {
       {
         url_field["id"] => url,
@@ -67,16 +67,33 @@ RSpec.describe "riverbed links", type: :request do
       }
     }
 
-    it "returns a record with the pre-set title" do
+    it "does not override the pre-set title or url" do
       send!
 
       expect(response.status).to eq(200)
       expect(response_body).to eq({
-        url_field["id"] => url,
-        title_field["id"] => title,
         saved_at_field["id"] => now,
         read_status_changed_at_field["id"] => now
       })
+    end
+  end
+
+  context "with date fields present" do
+    let(:earlier) { 1.day.ago.iso8601 }
+    let(:field_values) {
+      {
+        url_field["id"] => url,
+        title_field["id"] => title,
+        saved_at_field["id"] => earlier,
+        read_status_changed_at_field["id"] => earlier
+      }
+    }
+
+    it "does not overwrite the date fields" do
+      send!
+
+      expect(response.status).to eq(200)
+      expect(response_body).to eq({})
     end
   end
 end
