@@ -3,15 +3,17 @@ require "link_parser"
 module Riverbed
   class LinksController < ApplicationController
     def update
-      parsed_link = link_parser.process(
-        url: link_params["field-values"][url_field_id],
-        timeout_seconds: 30
-      )
+      attributes = {}
 
-      attributes = {
-        url_field_id => parsed_link.canonical
-      }
-      attributes[title_field_id] = parsed_link.title if default_title?(link_params)
+      if default_title?(link_params)
+        parsed_link = link_parser.process(
+          url: link_params["field-values"][url_field_id],
+          timeout_seconds: 30
+        )
+        attributes[title_field_id] = parsed_link.title
+        attributes[url_field_id] = parsed_link.canonical
+      end
+
       attributes[saved_at_field_id] = now if link_params["field-values"][saved_at_field_id].blank?
       attributes[read_status_changed_at_field] = now if link_params["field-values"][read_status_changed_at_field].blank?
 
