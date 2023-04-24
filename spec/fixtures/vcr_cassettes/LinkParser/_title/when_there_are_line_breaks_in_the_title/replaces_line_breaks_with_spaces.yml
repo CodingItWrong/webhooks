@@ -1,0 +1,267 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://slapdash.codingitwrong.com/josh
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 24 Apr 2023 11:17:21 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - text/html; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"914f3c75eed908c10349e224bdb6a652"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _notes_rails_session=Wlz4JJ1mvVkOPFEfemYM4sX90C0GNtSQVSYL2KmuArn11VVE9zj3kVSIkf6a9iI44EwyNbKI0DbXyyCPrDLStWQVR%2FqbatOJ%2Fo%2FBS5rAashrjje%2FKiROxqJjU8bLbiNdLDueCSrpE5WkMDb0Q4hN9Gr5ReiTA0L7fSt5xa56DvYZoHSJFlqA83Nj%2BpeajGbveguKiJblFf84WgbJDCFk4wJYN5r7f5eZlXzx35hIOU6QKpBILv6L2dTZD02cDAID69dfHD6gqqX16asNzEKJrrmvbeAH2AJyMwrahA%3D%3D--AsneOBdAHIcqVAQY--RCHYiHuEOnDkhwhSelD93A%3D%3D;
+        path=/; secure; HttpOnly
+      X-Request-Id:
+      - e410ec04-acf3-4b34-8bba-9d258df887e4
+      X-Runtime:
+      - '0.065616'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Content-Length:
+      - '17607'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html>\n  <head>\n    <title>  josh's Notes\n | Slapdash</title>\n
+        \   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n
+        \   <meta name=\"csrf-param\" content=\"authenticity_token\" />\n<meta name=\"csrf-token\"
+        content=\"tGk3wlFFTG2CaYm5QWsxNToRl2Jf7YJwwVi0UMLuOH9AY7GVVSIT9u5MszG1VqWECOLqmnbHm+lJAUWY5txVrg==\"
+        />\n    \n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\">\n<link
+        rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\">\n<link
+        rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\">\n<link
+        rel=\"manifest\" href=\"/site.webmanifest\">\n<link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg\"
+        color=\"#ff5622\">\n<meta name=\"apple-mobile-web-app-title\" content=\"Slapdash\">\n<meta
+        name=\"application-name\" content=\"Slapdash\">\n<meta name=\"msapplication-TileColor\"
+        content=\"#da532c\">\n<meta name=\"theme-color\" content=\"#ff5622\">\n\n\n
+        \   <link rel=\"stylesheet\" href=\"/assets/application-9f192b8c6e20f18b6558e0249f93f332f9986d16171e52014d47cb3dab7fd0c9.css\"
+        media=\"all\" data-turbolinks-track=\"reload\" />\n\n    <script src=\"/prism.js\"></script>\n
+        \ </head>\n\n  <body>\n    <nav class=\"navbar navbar-dark bg-dark navbar-expand-lg
+        mb-3\">\n      <div class=\"container\">\n        <a class=\"navbar-brand\"
+        href=\"/\">\n          <img class=\"navbar-logo mr-1\" src=\"/assets/logo-30@3x-aabd209be8f241717954bdb52bbed21b57e40176fdef214242ab793b3e47bfd1.png\"
+        />\n          Slapdash\n</a>\n      </div>\n    </nav>\n\n    <div class=\"container
+        full-height\">\n      <div class=\"row full-height\">\n        <div class=\"col-sm
+        full-height\">\n\n          \n<nav aria-label=\"breadcrumb\">\n  <ol class=\"breadcrumb\">\n
+        \   <li class=\"breadcrumb-item active\" aria-current=\"page\">josh</li>\n
+        \ </ol>\n</nav>\n\n<h1>josh's Notes</h1>\n\n\n<div class=\"list-group mb-3\">\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/a11y\">A11y</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/action-cable\">Action
+        Cable</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/active-support\">Active
+        Support</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/adonis\">Adonis</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/android\">Android</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/ansible\">Ansible</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/apt\">apt</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/atom\">Atom</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/back-4-blood\">Back
+        4 Blood</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/bem\">BEM</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/bootstrap\">Bootstrap</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/caching\">Caching</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/capybara\">Capybara</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/cash-app\">Cash
+        App</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/charles\">Charles</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/chrome\">Chrome</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/coffeescript-react\">CoffeeScript-React</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/concurrency\">Concurrency</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/core-data\">Core
+        Data</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/couchdb\">CouchDB</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/critical-rendering-path\">Critical
+        Rendering Path</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/css\">CSS</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/curl\">curl</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/cypress\">Cypress</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/date-fns\">date-fns</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/deckset\">Deckset</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/deferred-loading\">Deferred Loading</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/devise\">Devise</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/discord\">Discord</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/docker\">Docker</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/ecmascript\">ECMAScript</a>\n    <a
+        class=\"list-group-item list-group-item-action\" href=\"/josh/ember\">Ember</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/eslint\">ESLint</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/estimation\">Estimation</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/evolutionary-design\">Evolutionary
+        Design</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/expo\">Expo</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/expo-stack\">Expo
+        Stack</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/express\">Express</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/express-stack\">Express
+        Stack</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/factory_bot\">factory_bot</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/firebase\">Firebase</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/firefox\">Firefox</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/flexbox\">Flexbox
+        </a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/git\">Git</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/github\">GitHub</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/github-actions\">GitHub
+        Actions</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/git-push-to-deploy\">Git
+        Push-to-Deploy</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/graphiql\">GraphiQL</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/graphql\">GraphQL</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/heroku\">Heroku</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/history-of-tdd\">History of TDD</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/home\">Home</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/homebrew\">Homebrew</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/html\">HTML</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/hub\">hub</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/i18n\">I18n</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/icons\">Icons</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/indieweb\">IndieWeb</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/interface-builder\">Interface Builder</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/ios\">iOS</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/iterm\">iTerm</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/java\">Java</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/javascript\">JavaScript</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/jest\">Jest</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/jetbrains\">JetBrains</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/jetbrains-3e61dd20-5ecc-4f87-ac51-d73e1cd206f7\">JetBrains</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/jsdoc\">JSDoc</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/jwt\">JWT</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/kafka\">Kafka</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/kdenlive\">Kdenlive</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/kramdown\">Kramdown
+        </a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/laravel\">Laravel</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/librewolf\">LibreWolf</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/linux\">Linux</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/linux-mint\">Linux
+        Mint</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/ln\">ln</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/lodash\">Lodash</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/macos\">macOS</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/markua\">Markua</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/microformats\">Microformats</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/mirage\">Mirage</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/mock-service-worker\">Mock
+        Service Worker</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/mysql\">MySQL</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/netlify\">Netlify</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/next\">Next</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/nginx\">Nginx</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/nock\">Nock</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/nodenv\">nodenv</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/npm\">npm</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/nvm\">nvm</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/oauth\">OAuth</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/offline\">Offline</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/offline-sync\">Offline Sync</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/orbit\">Orbit</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/parcel\">Parcel</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/patterns\">Patterns</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/pharo\">Pharo</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/playstation\">PlayStation</a>\n    <a
+        class=\"list-group-item list-group-item-action\" href=\"/josh/pop-_os\">Pop!_OS</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/postgres\">Postgres</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/postman\">Postman</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/pouchdb\">PouchDB</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/preloading\">Preloading</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/prettier\">Prettier</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/proptypes\">PropTypes</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/pry\">Pry</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/python\">Python</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/rack\">Rack</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/rails\">Rails</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/rails-application-architecture\">Rails
+        Application Architecture</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/rails-auth\">Rails Auth</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/rbenv\">rbenv</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/react\">React</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/react-context\">React Context</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/react-native\">React Native</a>\n    <a
+        class=\"list-group-item list-group-item-action\" href=\"/josh/react-native-a11y\">React
+        Native A11y</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/react-navigation\">React
+        Navigation</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/react-router\">React
+        Router</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/react-testing-library\">React
+        Testing Library</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/redux\">Redux</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/regex\">Regex</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/rest\">REST</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/reusable-uitableviewcells\">Reusable UITableViewCells</a>\n    <a
+        class=\"list-group-item list-group-item-action\" href=\"/josh/rspec\">RSpec</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/rubocop\">Rubocop</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/ruby\">Ruby</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/ruby-concurrency\">Ruby
+        Concurrency</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/ruby-gems\">Ruby
+        Gems</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/rxjs\">RxJS</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/safari\">Safari</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/sass\">Sass</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/seaside\">Seaside</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/sequelize\">Sequelize</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/simple-design\">Simple
+        Design</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/sinon\">Sinon</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/slim\">Slim</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/sorbet\">Sorbet</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/spectacle\">Spectacle</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/squeak\">Squeak</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/steam\">Steam</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/storybook\">Storybook</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/styled-components\">Styled
+        Components</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/sublime\">Sublime</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/swift\">Swift</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/talon\">Talon</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/tdd\">TDD</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/tdd-approaches\">TDD
+        Approaches</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/test-double\">Test
+        Double</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/tmux\">tmux</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/twitch\">Twitch</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/types-of-test\">Types
+        of Test</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/ui-designer\">UI
+        Designer</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/uuid\">UUID</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/vagrant\">Vagrant</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/vcr\">VCR</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/viewport\">Viewport</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/virtualbox\">VirtualBox</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/vivaldi\">Vivaldi</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/voice-control-ios\">Voice
+        Control iOS</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/voice-control-mac\">Voice
+        Control Mac</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/voiceover-ios\">VoiceOver
+        iOS</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/voiceover-macos\">VoiceOver
+        macOS</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/vs-code\">VS
+        Code</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/vs-code-live-share\">VS
+        Code Live Share</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/vs-codium\">VS Codium</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/web-performance\">Web Performance</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/websockets\">WebSockets</a>\n    <a
+        class=\"list-group-item list-group-item-action\" href=\"/josh/web-workers\">Web
+        Workers</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/why-did-you-render\">why-did-you-render</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/why-test\">Why
+        Test</a>\n    <a class=\"list-group-item list-group-item-action\" href=\"/josh/xcode\">Xcode</a>\n
+        \   <a class=\"list-group-item list-group-item-action\" href=\"/josh/xcode-project-file\">Xcode
+        Project File</a>\n    <a class=\"list-group-item list-group-item-action\"
+        href=\"/josh/xunit-test-patterns\">xUnit Test Patterns</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/yalc\">yalc</a>\n    <a class=\"list-group-item
+        list-group-item-action\" href=\"/josh/yarn\">Yarn</a>\n</div>\n\n        </div>\n
+        \     </div>\n    </div>\n  </body>\n</html>\n"
+  recorded_at: Mon, 24 Apr 2023 11:17:21 GMT
+recorded_with: VCR 6.1.0

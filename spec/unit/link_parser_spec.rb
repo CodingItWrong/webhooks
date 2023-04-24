@@ -59,6 +59,13 @@ RSpec.describe LinkParser, :vcr do
       end
     end
 
+    context "when there are line breaks in the title" do
+      let(:url) { "https://slapdash.codingitwrong.com/josh" }
+      it "replaces line breaks with spaces" do
+        expect(link.title).to eq("josh's Notes | Slapdash")
+      end
+    end
+
     # this functionality matters, but the test case no longer exists
     # context "when there are entities in the title" do
     #   let(:url) do
