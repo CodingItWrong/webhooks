@@ -46,12 +46,12 @@ RSpec.describe "riverbed links", type: :request do
       }
     }
 
-    it "returns a record with the retrieved title" do
+    it "returns a record with the retrieved title and canonical URL" do
       send!
 
       expect(response.status).to eq(200)
       expect(response_body).to eq({
-        url_field["id"] => url,
+        url_field["id"] => "#{url}/",
         title_field["id"] => "Sample Post Title",
         saved_at_field["id"] => now,
         read_status_changed_at_field["id"] => now
@@ -72,7 +72,7 @@ RSpec.describe "riverbed links", type: :request do
 
       expect(response.status).to eq(200)
       expect(response_body).to eq({
-        url_field["id"] => url,
+        url_field["id"] => "#{url}/",
         saved_at_field["id"] => now,
         read_status_changed_at_field["id"] => now
       })
@@ -95,7 +95,7 @@ RSpec.describe "riverbed links", type: :request do
 
       expect(response.status).to eq(200)
       expect(response_body).to eq({
-        url_field["id"] => url
+        url_field["id"] => "#{url}/"
       })
     end
   end

@@ -22,7 +22,7 @@ class FakeLinkParser
   end
 
   def canonical
-    url
+    "#{url}/"
   end
 
   private
