@@ -10,11 +10,11 @@ module Riverbed
 
       attributes = {
         url_field_id => parsed_link.canonical,
-        title_field_id => link_params["field-values"][title_field_id],
-        field_id("Saved At") => now,
-        field_id("Read Status Changed At") => now
+        title_field_id => link_params["field-values"][title_field_id]
       }
       attributes[title_field_id] = parsed_link.title if default_title?(link_params)
+      attributes[saved_at_field_id] = now if link_params["field-values"][saved_at_field_id].blank?
+      attributes[read_status_changed_at_field] = now if link_params["field-values"][read_status_changed_at_field].blank?
 
       render json: attributes
     end
@@ -39,6 +39,10 @@ module Riverbed
     def url_field_id = field_id("URL")
 
     def title_field_id = field_id("Title")
+
+    def saved_at_field_id = field_id("Saved At")
+
+    def read_status_changed_at_field = field_id("Read Status Changed At")
 
     def link_parser = LinkParser
 
