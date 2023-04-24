@@ -67,13 +67,12 @@ RSpec.describe "riverbed links", type: :request do
       }
     }
 
-    it "returns a record with the pre-set title" do
+    it "does not override the pre-set title" do
       send!
 
       expect(response.status).to eq(200)
       expect(response_body).to eq({
         url_field["id"] => url,
-        title_field["id"] => title,
         saved_at_field["id"] => now,
         read_status_changed_at_field["id"] => now
       })
@@ -96,8 +95,7 @@ RSpec.describe "riverbed links", type: :request do
 
       expect(response.status).to eq(200)
       expect(response_body).to eq({
-        url_field["id"] => url,
-        title_field["id"] => title
+        url_field["id"] => url
       })
     end
   end

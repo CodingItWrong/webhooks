@@ -9,8 +9,7 @@ module Riverbed
       )
 
       attributes = {
-        url_field_id => parsed_link.canonical,
-        title_field_id => link_params["field-values"][title_field_id]
+        url_field_id => parsed_link.canonical
       }
       attributes[title_field_id] = parsed_link.title if default_title?(link_params)
       attributes[saved_at_field_id] = now if link_params["field-values"][saved_at_field_id].blank?
