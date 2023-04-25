@@ -26,13 +26,13 @@ module Riverbed
 
     def api_key = ENV["WEBHOOKS_API_KEY"]
 
-    def user_for_api_key
+    def api_key_valid?
       provided_header = params["api_key"]
       provided_header == api_key
     end
 
     def verify_api_key
-      head :unauthorized unless user_for_api_key.present?
+      head :unauthorized unless api_key_valid?
     end
 
     def link_params
