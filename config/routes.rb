@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   namespace :riverbed do
-    resources :links, only: %w[update]
+    patch ":api_key/links/:link_id", to: "links#update", as: "link"
   end
 end

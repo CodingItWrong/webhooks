@@ -13,7 +13,6 @@ RSpec.describe "riverbed links", type: :request do
   let(:api_key) { "valid_api_key" }
   let(:body) {
     {
-      "key" => token,
       "field-values" => field_values,
       "elements" => [
         url_field,
@@ -39,19 +38,7 @@ RSpec.describe "riverbed links", type: :request do
   end
 
   def send!
-    patch riverbed_link_path(27), params: body.to_json, headers: headers
-  end
-
-  context "with no API token" do
-    let(:token) { nil }
-    let(:title) { "custom title" }
-    let(:field_values) { {url_field["id"] => url} }
-
-    it "returns unauthorized" do
-      send!
-      expect(response.status).to eq(401)
-      expect(response.body).to be_empty
-    end
+    patch riverbed_link_path(api_key: token, link_id: 27), params: body.to_json, headers: headers
   end
 
   context "with incorrect API token" do

@@ -27,7 +27,7 @@ module Riverbed
     def api_key = ENV["WEBHOOKS_API_KEY"]
 
     def user_for_api_key
-      provided_header = params["key"]
+      provided_header = params["api_key"]
       provided_header == api_key
     end
 
