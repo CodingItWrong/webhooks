@@ -2,6 +2,8 @@ require "link_parser"
 
 module Riverbed
   class LinksController < ApplicationController
+    before_action :verify_api_key
+
     def update
       attributes = {}
 
@@ -21,6 +23,17 @@ module Riverbed
     end
 
     private
+
+    def api_key = ENV["WEBHOOKS_API_KEY"]
+
+    def api_key_valid?
+      provided_header = params["api_key"]
+      provided_header == api_key
+    end
+
+    def verify_api_key
+      head :unauthorized unless api_key_valid?
+    end
 
     def link_params
       params

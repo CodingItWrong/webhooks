@@ -10,6 +10,7 @@ RSpec.describe "riverbed links", type: :request do
   let(:read_status_changed_at_field) { {"id" => "4", "attributes" => {"name" => "Read Status Changed At"}} }
   let(:url) { "https://example.com/blog/sample-post-title" }
   let(:headers) { {"Content-Type" => "application/json"} }
+  let(:api_key) { "valid_api_key" }
   let(:body) {
     {
       "field-values" => field_values,
@@ -26,6 +27,7 @@ RSpec.describe "riverbed links", type: :request do
   let(:title) { "Pre-Set Title" }
 
   before(:each) do
+    ENV["WEBHOOKS_API_KEY"] = api_key
     LinkParser.fake!
   end
 
@@ -36,64 +38,80 @@ RSpec.describe "riverbed links", type: :request do
   end
 
   def send!
-    patch riverbed_link_path(27), params: body.to_json, headers: headers
+    patch riverbed_link_path(api_key: token, link_id: 27), params: body.to_json, headers: headers
   end
 
-  context "without a pre-set title" do
-    let(:field_values) {
-      {
-        url_field["id"] => url
-      }
-    }
+  context "with incorrect API token" do
+    let(:token) { "bad_token" }
+    let(:title) { "custom title" }
+    let(:field_values) { {url_field["id"] => url} }
 
-    it "returns a record with the retrieved title and canonical URL" do
+    it "returns unauthorized" do
       send!
-
-      expect(response.status).to eq(200)
-      expect(response_body).to eq({
-        url_field["id"] => "#{url}/",
-        title_field["id"] => "Sample Post Title",
-        saved_at_field["id"] => now,
-        read_status_changed_at_field["id"] => now
-      })
+      expect(response.status).to eq(401)
+      expect(response.body).to be_empty
     end
   end
 
-  context "with a pre-set title" do
-    let(:field_values) {
-      {
-        url_field["id"] => url,
-        title_field["id"] => title
+  context "with correct API token" do
+    let(:token) { api_key }
+
+    context "without a pre-set title" do
+      let(:field_values) {
+        {
+          url_field["id"] => url
+        }
       }
-    }
 
-    it "does not override the pre-set title or url" do
-      send!
+      it "returns a record with the retrieved title and canonical URL" do
+        send!
 
-      expect(response.status).to eq(200)
-      expect(response_body).to eq({
-        saved_at_field["id"] => now,
-        read_status_changed_at_field["id"] => now
-      })
+        expect(response.status).to eq(200)
+        expect(response_body).to eq({
+          url_field["id"] => "#{url}/",
+          title_field["id"] => "Sample Post Title",
+          saved_at_field["id"] => now,
+          read_status_changed_at_field["id"] => now
+        })
+      end
     end
-  end
 
-  context "with date fields present" do
-    let(:earlier) { 1.day.ago.iso8601 }
-    let(:field_values) {
-      {
-        url_field["id"] => url,
-        title_field["id"] => title,
-        saved_at_field["id"] => earlier,
-        read_status_changed_at_field["id"] => earlier
+    context "with a pre-set title" do
+      let(:field_values) {
+        {
+          url_field["id"] => url,
+          title_field["id"] => title
+        }
       }
-    }
 
-    it "does not overwrite the date fields" do
-      send!
+      it "does not override the pre-set title or url" do
+        send!
 
-      expect(response.status).to eq(200)
-      expect(response_body).to eq({})
+        expect(response.status).to eq(200)
+        expect(response_body).to eq({
+          saved_at_field["id"] => now,
+          read_status_changed_at_field["id"] => now
+        })
+      end
+    end
+
+    context "with date fields present" do
+      let(:earlier) { 1.day.ago.iso8601 }
+      let(:field_values) {
+        {
+          url_field["id"] => url,
+          title_field["id"] => title,
+          saved_at_field["id"] => earlier,
+          read_status_changed_at_field["id"] => earlier
+        }
+      }
+
+      it "does not overwrite the date fields" do
+        send!
+
+        expect(response.status).to eq(200)
+        expect(response_body).to eq({})
+      end
     end
   end
 end
