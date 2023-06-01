@@ -39,8 +39,8 @@ class ParseLinkJob < ApplicationJob
       "field_values" => {
         url_field.id => attributes[:url],
         title_field.id => attributes[:title],
-        saved_at_field.id => Time.zone.now.iso8601,
-        read_status_changed_at_field.id => Time.zone.now.iso8601
+        saved_at_field.id => Time.zone.now.iso8601(3),
+        read_status_changed_at_field.id => Time.zone.now.iso8601(3)
       }
     )
   end
