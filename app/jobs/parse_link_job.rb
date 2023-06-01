@@ -33,14 +33,17 @@ class ParseLinkJob < ApplicationJob
   end
 
   def save_link(attributes)
+    now = Time.zone.now.iso8601(3)
+    puts "LOGGING NOW: #{now}"
+
     # Once this is extracted from the core API this will be a POST instead of a DB creation
     board.cards.create!(
       :user => board.user, # TODO: look up board by hard-coded ID so doesn't conflict with someone else's
       "field_values" => {
         url_field.id => attributes[:url],
         title_field.id => attributes[:title],
-        saved_at_field.id => Time.zone.now.iso8601(3),
-        read_status_changed_at_field.id => Time.zone.now.iso8601(3)
+        saved_at_field.id => now,
+        read_status_changed_at_field.id => now
       }
     )
   end
