@@ -60,7 +60,7 @@ module Riverbed
 
     def link_parser = LinkParser
 
-    def now = Time.zone.now.iso8601
+    def now = Time.zone.now.iso8601(3)
 
     def default_title?(link_params)
       title_field = link_params["field-values"][title_field_id]

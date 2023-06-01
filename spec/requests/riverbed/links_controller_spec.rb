@@ -23,7 +23,7 @@ RSpec.describe "riverbed links", type: :request do
     }
   }
   let(:response_body) { JSON.parse(response.body) }
-  let(:now) { Time.zone.now.iso8601 }
+  let(:now) { Time.zone.now.iso8601(3) }
   let(:title) { "Pre-Set Title" }
 
   before(:each) do
