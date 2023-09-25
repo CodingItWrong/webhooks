@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby(File.read(".ruby-version").chomp)
 
 gem "rails", "~> 7.0.8"
-gem "puma", "~> 6.3"
+gem "puma", "~> 6.4"
 gem "httparty"
 
 group :development do
