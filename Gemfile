@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby(File.read(".ruby-version").chomp)
 
-gem "rails", "~> 7.2.1"
+gem "rails", "~> 7.2.2"
 gem "puma", "~> 6.4"
 gem "httparty"
 
